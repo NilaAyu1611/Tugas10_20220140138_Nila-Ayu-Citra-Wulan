@@ -1,0 +1,218 @@
+body {
+  background: linear-gradient(135deg, #ffcc33, #ff99cc, #66ccff, #33cc99);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #b9e008aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.large-logo {
+  height: 12em; /* Adjust the size of the GIF */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: rgba(147, 114, 114, 0.597);
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(143, 109, 66, 0.556); /* Slight white background to make content readable */
+  border-radius: 10px;
+}
+.container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 { 
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f7ff04;
+  font-family:goudy stout;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  width: 45%;
+  margin-right: 20px; /* Add margin for spacing */
+  overflow: hidden; /* Ensure the hover effect stays within bounds */
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05); /* Scale the image slightly on hover */
+  box-shadow: 0 8px 16px rgba(77, 57, 8, 0.66); /* Add shadow on hover */
+} 
+
+.card {
+  width: 50%;
+  animation: slideIn 2s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(92, 61, 11, 0.753);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.gif-wrapper {
+  margin-top: 10px;
+}
+
+.gif-wrapper img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #3e3b3b;
+}
+
+/* Style untuk paragraf (p) */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #353131; /* Warna teks */
+  margin: 0 0 1em 0; /* Margin bawah untuk spasi antar paragraf */
+  padding: 0;
+  transition: color 0.3s ease; /* Transisi warna */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p:hover {
+  color: #0f0700; /* Warna teks saat hover */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style untuk heading 2 (h2) */
+h2 {
+  font-size: 1.5rem; /* Ukuran font */
+  color: #dbf328; /* Warna teks */
+  margin: 0.5em 0; /* Margin atas dan bawah */
+  padding: 0;
+  border-bottom: 2px solid #c1e589; /* Garis bawah */
+  padding-bottom: 0.5em; /* Padding bawah untuk spasi dengan garis */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Transisi warna dan warna garis */
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+h2:hover {
+  color: #0d0101; /* Warna teks saat hover */
+  border-color: #baad68; /* Warna garis saat hover */
+}
+
+/* Style untuk heading 3 (h3) */
+h3 {
+  font-size: 1.25rem; /* Ukuran font */
+  color: #ffd30e; /* Warna teks */
+  margin: 0.5em 0; /* Margin atas dan bawah */
+  padding: 0;
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  letter-spacing: 1px; /* Jarak antar huruf */
+  transition: color 0.3s ease; /* Transisi warna */
+  font-family:'Times New Roman', Times, serif;
+}
+
+h3:hover {
+  color: #ecb895; /* Warna teks saat hover */
+}
+
